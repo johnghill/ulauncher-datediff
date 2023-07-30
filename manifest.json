@@ -1,9 +1,20 @@
 {
-  "name": "Days Between Dates",
-  "description": "Calculate the number of days between two dates",
-  "icon": "images/calendar-days-solid.svg",
+  "required_api_version": "2.0.0",
+  "name": "Date Difference Calculator",
+  "description": "Calculate the difference between two dates",
   "developer_name": "John Hill",
   "developer_email": "j.hill@herts.ac.uk",
-  "main_script": "main.py",
-  "preferences": []
+  "icon": "images/calendar-days-solid.svg",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "date_diff_kw",
+      "type": "keyword",
+      "name": "DateDiff",
+      "description": "Calculate date difference",
+      "default_value": "datediff"
+    }
+  ]
 }
