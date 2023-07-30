@@ -1,0 +1,9 @@
+{
+  "name": "Days Between Dates",
+  "description": "Calculate the number of days between two dates",
+  "icon": "images/calendar-days-solid.svg",
+  "developer_name": "John Hill",
+  "developer_email": "j.hill@herts.ac.uk",
+  "main_script": "main.py",
+  "preferences": []
+}
