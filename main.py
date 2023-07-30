@@ -16,7 +16,7 @@ class DaysBetweenDatesExtension(EventListener):
             query = event.get_argument()
             if not query:
                 return RenderResultListAction([
-                    ExtensionResultItem(icon='images/icon.png', name='Enter two dates separated by a comma', on_enter=None)
+                    ExtensionResultItem(icon='images/calendar-days-solid.svg', name='Enter two dates separated by a comma', on_enter=None)
                 ])
 
             date1, date2 = [date.strip() for date in query.split(',')]
