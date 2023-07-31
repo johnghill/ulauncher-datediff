@@ -26,7 +26,7 @@ class KeywordQueryEventListener(EventListener):
         query = event.get_argument()
         if not query:
             return RenderResultListAction([
-                ExtensionResultItem(icon='images/calendar-days-solid.svg', name='Enter two dates separated by a comma', on_enter=HideWindowAction())
+                ExtensionResultItem(icon='images/calendar-days-solid.svg', name='Enter two dates separated by a comma (e.g. YYYY-MM-DD, YYYY-MM-DD)', on_enter=HideWindowAction())
             ])
 
         date1, date2 = [date.strip() for date in query.split(',')]
